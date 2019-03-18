@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+     /*  */
+    .parentA{
+      display: flex;
+      height: 200px;
+      border: 1px solid red;
+      /* row：让子元素横向排列
+        column: 让子元素纵向排列
+       */
+      flex-direction: row;
+       /* 横向排列下，让子元素水平居中显示 */
+      justify-content: center;
+      /*横向排列下, 让子元素水平居左显示 */
+      /* justify-content: flex-start; */
+      /* 横向排列下, 让子元素水平居右显示 */ 
+      /* justify-content: flex-end;  */
+      /* 横向排列下,让子元素垂直居中 */
+      align-items: center;
+    }
+    .parentB{
+      display: flex;
+      height: 1000px;
+      border: 1px solid blue;
+      /* row：让子元素横向排列
+        column: 让子元素纵向排列
+       */
+      flex-direction: column;
+       /* 纵向排列下， 让子元素垂直居中显示 */
+      justify-content: center;
+      /* 纵向排列下，让子元素垂直居上显示 */
+      /* justify-content: flex-start; */
+      /* 纵向排列下， 让子元素素垂直居下显示 */ 
+      /* justify-content: flex-end;  */
+      /* 纵向排列下,让子元素水平居中 */
+      align-items: center;
+    }
+    .sonA{
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    
+    /* ========== TIPS ================= */
+    /* 你还可以设置下面的属性试试有什么效果:
+        justify-content: space-around;
+        justify-content: space-between;
+        justify-content: space-evenly;
+     */
+    
+  </style>
+</head>
+<body>
+  <div class="parentA">
+    <div class="sonA">1</div>
+    <div class="sonA">2</div>
+    <div class="sonA">3</div>
+    <div class="sonA">4</div>
+    <div class="sonA">5</div>
+    <div class="sonA">6</div>
+    <div class="sonA">7</div>
+  </div>
+  <div class="parentB">
+      <div class="sonA sonB">1</div>
+      <div class="sonA sonB">2</div>
+      <div class="sonA sonB">3</div>
+      <div class="sonA sonB">4</div>
+      <div class="sonA sonB">5</div>
+      <div class="sonA sonB">6</div>
+      <div class="sonA sonB">7</div>
+    </div>
+  
+</body>
+</html>
