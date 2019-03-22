@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .le{
+            background: #F5F6F7;
+        }
+    div.head{
+        display: flex;
+        height: 54px;
+        width: 1440px;
+        background:#33789B;
+        box-shadow: 0 2px 4px 0 rgba(204,204,204,0.50);
+        justify-content: space-between;/*靠两边显示*/
+    }
+    div.left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+    div.l1{
+        font-family: PingFangSC-Medium;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: left;
+        padding-left: 12px;
+    }
+    div.l2{
+        font-family:PingFangSC-Regular;
+        font-size:13px;
+        color:#FFFFFF;
+        letter-spacing:0;
+        text-align:left;
+        padding-left: 12px;
+    }
+    div.right{
+        display: flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items: center;
+    }
+    div.r1{
+        font-family:PingFangSC-Regular;
+        font-size: 14px;
+        color:#FFFFFF;
+        text-align: center;
+    }
+    div.sec{
+        display: flex;
+        flex-direction:row;
+    }
+    div.zuo{
+        width: 260px;
+        height: 1156px;
+        background:#FFFFFF;
+    }
+    div.z1{
+        padding-left: 40px;
+        
+        font-family: STHeitiSC-Medium;
+        font-size: 20px;
+        color: #9B9B9B;
+        letter-spacing: 0;
+    }
+    div.z2{
+        padding-left:78px;
+        padding-top:10px;
+        font-family: PingFangSC-Semibold;
+        font-size:18px;
+        color: #33789B;
+        letter-spacing: 0;
+    }
+    div.z3{
+       
+        margin-left: 78px;
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        color: #4a4a4a;
+        letter-spacing: 0;
+    }
+    div.y1{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;/*靠两边显示*/
+        width:1090px;
+    }
+    div.lf1{
+        margin-top: 51px;
+        font-size: 18px;
+    }
+    div.lf2{
+        padding-top:40px;
+       
+    }
+    div.m1{
+        font-family:PingFangSC-Medium;
+        font-size: 14px;
+        color:#FFFFFF;
+        letter-spacing: 0;
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 17px;
+    }
+    div.m2{
+        font-family:PingFangSC-Regular;
+        font-size: 16px;
+        color: #9B9B9B;
+        letter-spacing: 0;
+        padding-top: 9px;
+        padding-left:50px;
+    }
+    div.m3{
+        background: #33789B;
+        width: 120px;
+        height: 5px;
+        margin-left: 80px;
+    }
+    div.m4{
+        background: #dadada;
+        width: 1010px;
+        height: 1px;
+        margin-left: 80px;
+    }
+    div.n{
+        background: #FFFFFF;
+        width: 1010px;
+        height: 880px;
+        margin-left: 80px;
+        margin-top:20px;
+    }
+    div.n1{
+        font-family: STHeitiSC-Medium;
+        font-size: 14px;
+        color: #9B9B9B;
+        letter-spacing: 0;
+        margin-top: 50px;
+    }
+    div.n2{
+        background: #dadada;
+        width: 970px;
+        height: 1px;
+        margin-top: 15px;
+        margin-left:20px;
+    }
+    div.k{
+        display: flex;
+        flex-direction: row;
+    }
+    div.k1{
+        font-family:PingFangSC-Medium;
+        font-size: 16px;
+        columns: #4a4a4a;
+        letter-spacing: 0;
+        margin-top:39px;
+        
+       
+    }
+    .k2{
+        width:99.4px;
+        height:60px;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+    div.u{
+        display: flex;
+        flex-direction: row;
+    }
+    div.u1{
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #9B9B9B;
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+    div.u2{
+        background: #33789B;
+        border-radius: 2px;
+        margin-top: 25px;
+        margin-left: 593px;
+        width: 30px;
+        height: 30px;
+    }
+    div.u3{
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        color: #FFFFFF;
+      margin-top: 3px;
+        margin-left: 10px;
+    }
+    div.u4{
+        border: 1px solid #BCBCBC;
+        border-radius: 2px;
+        margin-top: 25px;
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    div.u5{
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        color:#BCBCBC;
+      margin-top: 3px;
+        margin-left: 10px;
+    }
+    div.u6{
+        background: #BCBCBC;
+        border-radius: 2px;
+        margin-top: 25px;
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    div.u7{
+      
+      margin-top: 3px;
+        margin-left: 10px;
+    }
+    </style>
+</head>
+<body class="le">
+    <div class="head">
+        <div class="left">
+            <div class="l1">上海市进才中学</div>
+            <div class="l2">SHANGHAI JINCAI HIGN SCHOOL</div>
+        </div>
+        <div class="right">
+            <div class="r1">教研室</div>
+            <div class="r1" style="padding-left:53px">微课库</div>
+            <div class="r1" style="padding-left:53px">知氏库</div>
+            <div class="r1" style="padding-left:39px">管理控制台</div>
+            <img src="video-play-big.png" style="width:38px;height:38px;padding-left: 39px;">
+        </div>
+    </div>
+    <div class="sec">
+        <div class="zuo">
+            <div class="z1" style="padding-top: 40px;">>微课库管理</div>
+            <div style="background:#F5F6F7;border-radius:19px;width:260px;height:45px;margin-top: 10px;">
+                <div class="z2">微课库</div>
+            </div>
+            <div class="z3" style=" margin-top:10px;">视频材料</div>
+            <div class="z3" style=" margin-top:20px;">标签</div>
+            <div class="z1" style=" margin-top: 20px;">>待定</div>
+        </div>
+        <div>
+            <div class="y1">
+                <div class="lf1">
+                    <span style="margin-left:104px;font-family:PingFangSC-Semibold;color:#33789B;">全部课程</span>
+                    <span style="margin-left:48px;font-family:PingFangSC-Regular;color: #444444;">热门微课</span>
+                </div>
+                <div class="lf2">
+                    <div style="width:110px; height:40px; border-radius:4px;background:#33789B;display: inline-block;">
+                        <div class="m1">+发布微课</div> 
+                    </div>
+                    <div style="width:300px; height:40px;margin-left:20px; border-radius:4px;background:#E8E8E8;display: inline-block;">
+                        <div class="m2">搜索微课</div>
+                    </div>
+                </div>
+            </div>
+            <div class="m3"></div>
+            <div class="m4"></div>
+            <div class="n">
+                <div class="n1">
+                    <span style="margin-left:220px;">微课名称</span>
+                    <span style="margin-left:304px;">微课类型</span>
+                    <span style="margin-left:164px;">级段</span>
+                </div>
+                <div class="n2"></div>
+                <div class="k">
+                    <img class="k2" src="course_banner.png">
+                    <div class="k1" style="margin-left: 40.6px;">科技|三维设计与打印技术</div>
+                    <div class="k1" style="margin-left:185px;">科学与技术</div>
+                    <div class="k1" style="margin-left:143px;">高中</div>
+                </div>
+                <div class="k">
+                        <img class="k2" src="course_banner.png">
+                        <div class="k1" style="margin-left: 40.6px;">未来飞行器的设计</div>
+                        <div class="k1" style="margin-left:235px;">工程</div>
+                        <div class="k1" style="margin-left:192px;">初中</div>
+                </div>
+                <div class="k">
+                        <img class="k2" src="course_banner.png">
+                        <div class="k1" style="margin-left: 40.6px;">设计制作建筑模型</div>
+                        <div class="k1" style="margin-left:237px;">科学与技术</div>
+                        <div class="k1" style="margin-left:141px;">高中</div>
+                </div>
+                <div class="k">
+                        <img class="k2" src="course_banner.png">
+                        <div class="k1" style="margin-left: 40.6px;">寻找生活中的标志</div>
+                        <div class="k1" style="margin-left:237px;">商科</div>
+                        <div class="k1" style="margin-left:190px;">高中</div>
+                </div>
+                <div class="k">
+                        <img class="k2" src="course_banner.png">
+                        <div class="k1" style="margin-left: 40.6px;">影视欣赏与创意制作</div>
+                        <div class="k1" style="margin-left:219px;">艺术与传媒</div>
+                        <div class="k1" style="margin-left:143px;">初中</div>
+                </div>
+                <div class="k">
+                        <img class="k2" src="course_banner.png">
+                        <div class="k1" style="margin-left: 40.6px;">科技|三维设计与打印技术</div>
+                        <div class="k1" style="margin-left:185px;">科学与技术</div>
+                        <div class="k1" style="margin-left:143px;">高中</div>
+                    </div>
+                    <div class="k">
+                            <img class="k2" src="course_banner.png">
+                            <div class="k1" style="margin-left: 40.6px;">未来飞行器的设计</div>
+                            <div class="k1" style="margin-left:235px;">工程</div>
+                            <div class="k1" style="margin-left:192px;">初中</div>
+                    </div>
+                    <div class="k">
+                            <img class="k2" src="course_banner.png">
+                            <div class="k1" style="margin-left: 40.6px;">设计制作建筑模型</div>
+                            <div class="k1" style="margin-left:237px;">科学与技术</div>
+                            <div class="k1" style="margin-left:141px;">高中</div>
+                    </div>
+                    <div class="k">
+                            <img class="k2" src="course_banner.png">
+                            <div class="k1" style="margin-left: 40.6px;">寻找生活中的标志</div>
+                            <div class="k1" style="margin-left:237px;">商科</div>
+                            <div class="k1" style="margin-left:190px;">高中</div>
+                    </div>
+                    <div class="k">
+                            <img class="k2" src="course_banner.png">
+                            <div class="k1" style="margin-left: 40.6px;">影视欣赏与创意制作</div>
+                            <div class="k1" style="margin-left:219px;">艺术与传媒</div>
+                            <div class="k1" style="margin-left:143px;">初中</div>
+                    </div>
+            </div>
+            <div class="u">
+                <div class="u1">已全部加载，当前显示1-10个，共27个</div>
+                <div class="u2">
+                    <div class="u3">1</div>
+                </div>
+                <div class="u4">
+                    <div class="u5">2</div>
+                </div>
+                <div class="u4">
+                        <div class="u5">3</div>
+                    </div>
+                <div class="u6">
+                    <div class="u7">></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
